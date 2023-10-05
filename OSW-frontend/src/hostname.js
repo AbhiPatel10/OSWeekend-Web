@@ -1,3 +1,3 @@
-const hostname = "http://localhost:4000";
+const hostname = "https://os-weekend-backend.vercel.app/";
 
 module.exports = { hostname };

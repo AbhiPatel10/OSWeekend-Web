@@ -10,13 +10,10 @@ const app = express();
 const PORT = process.env.PORT;
 
 // app.use(cors());
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-  })
-);
-
+app.use(cors())
+app.get('/', (req, res) => {
+  res.send('Welcome to OS-Weekend backend');
+});
 app.use(express.urlencoded({ limit: "10mb", extended: true }));
 app.use(express.json());
 
