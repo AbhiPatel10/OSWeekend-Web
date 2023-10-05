@@ -5,7 +5,8 @@
   "main": "App.ja",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon App.js"
+    "start": "node App.js",
+    "dev": "nodemon App.js"
   },
   "author": "Darsh and Shivam",
   "license": "ISC",
