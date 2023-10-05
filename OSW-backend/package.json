@@ -2,7 +2,8 @@
   "name": "osw-sgp",
   "version": "1.0.0",
   "description": "",
-  "main": "App.ja",
+  "main": "App.js",
+  "type": "module",
   "engines": {
     "node": "18.x"
   },
