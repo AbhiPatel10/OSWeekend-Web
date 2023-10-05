@@ -10,16 +10,18 @@ const app = express();
 const PORT = process.env.PORT;
 
 // app.use(cors());
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-  })
-);
-
+// app.use(
+//   cors({
+//     origin: "http://localhost:3000",
+//     credentials: true,
+//   })
+// );
+app.use(cors());
 app.use(express.urlencoded({ limit: "10mb", extended: true }));
 app.use(express.json());
-
+app.get('/', (req, res) => {
+  res.send('Welcome to OS-Weekend backend');
+});
 // Serve static files from the 'uploads' folder -- temporary
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
