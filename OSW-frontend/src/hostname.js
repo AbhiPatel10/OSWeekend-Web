@@ -1,3 +1,3 @@
-const hostname = "https://os-weekend-backend.vercel.app/";
+const hostname = "https://osw-backend.onrender.com";
 
 module.exports = { hostname };
